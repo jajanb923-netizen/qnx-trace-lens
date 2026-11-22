@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<title>qnx-trace-lens report</title>
+<style>body{font-family:system-ui,sans-serif;margin:24px;color:#222}
+h1{font-size:20px}h2{font-size:16px;margin-top:28px}
+table{border-collapse:collapse}td,th{border:1px solid #ccc;padding:4px 8px;
+font-size:13px;text-align:right}td:first-child,th:first-child{text-align:left}
+.pass{color:#1e7d32;font-weight:700}.fail{color:#b71c1c;font-weight:700}
+svg{border:1px solid #ddd}</style></head><body>
+<h1>qnx-trace-lens report</h1>
+<p>Trace span 0.092 s &middot; 4 threads &middot; cycles/sec 2648529944</p>
+<p>Worst ready-wait: 40.000 ms (limit 100.000 ms) &mdash;
+<span class="pass">PASS</span></p>
+<p>Priority inversions: 1 (limit 0) &mdash;
+<span class="fail">FAIL</span></p>
+<h2>Timeline</h2>
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="174">
+<rect x="0" y="0" width="900" height="174" fill="#ffffff"/>
+<line x1="220.0" y1="30" x2="220.0" y2="134" stroke="#e5e5e5"/>
+<text x="220.0" y="20" font-size="10" fill="#666" text-anchor="middle">0 ms</text>
+<line x1="286.0" y1="30" x2="286.0" y2="134" stroke="#e5e5e5"/>
+<text x="286.0" y="20" font-size="10" fill="#666" text-anchor="middle">9 ms</text>
+<line x1="352.0" y1="30" x2="352.0" y2="134" stroke="#e5e5e5"/>
+<text x="352.0" y="20" font-size="10" fill="#666" text-anchor="middle">18 ms</text>
+<line x1="418.0" y1="30" x2="418.0" y2="134" stroke="#e5e5e5"/>
+<text x="418.0" y="20" font-size="10" fill="#666" text-anchor="middle">28 ms</text>
+<line x1="484.0" y1="30" x2="484.0" y2="134" stroke="#e5e5e5"/>
+<text x="484.0" y="20" font-size="10" fill="#666" text-anchor="middle">37 ms</text>
+<line x1="550.0" y1="30" x2="550.0" y2="134" stroke="#e5e5e5"/>
+<text x="550.0" y="20" font-size="10" fill="#666" text-anchor="middle">46 ms</text>
+<line x1="616.0" y1="30" x2="616.0" y2="134" stroke="#e5e5e5"/>
+<text x="616.0" y="20" font-size="10" fill="#666" text-anchor="middle">55 ms</text>
+<line x1="682.0" y1="30" x2="682.0" y2="134" stroke="#e5e5e5"/>
+<text x="682.0" y="20" font-size="10" fill="#666" text-anchor="middle">64 ms</text>
+<line x1="748.0" y1="30" x2="748.0" y2="134" stroke="#e5e5e5"/>
+<text x="748.0" y="20" font-size="10" fill="#666" text-anchor="middle">74 ms</text>
+<line x1="814.0" y1="30" x2="814.0" y2="134" stroke="#e5e5e5"/>
+<text x="814.0" y="20" font-size="10" fill="#666" text-anchor="middle">83 ms</text>
+<line x1="880.0" y1="30" x2="880.0" y2="134" stroke="#e5e5e5"/>
+<text x="880.0" y="20" font-size="10" fill="#666" text-anchor="middle">92 ms</text>
+<text x="212" y="44" font-size="11" fill="#222">pid:100 tid:1</text>
+<rect x="220.0" y="33" width="14.3" height="14" fill="#2e9e5b"><title>THRUNNING 2.000 ms</title></rect>
+<rect x="234.3" y="33" width="287.0" height="14" fill="#e8a13a"><title>THREADY 40.000 ms</title></rect>
+<rect x="521.3" y="33" width="14.3" height="14" fill="#2e9e5b"><title>THRUNNING 2.000 ms</title></rect>
+<rect x="535.7" y="33" width="43.0" height="14" fill="#7d6bc4"><title>THRECEIVE 6.000 ms</title></rect>
+<rect x="578.7" y="33" width="287.0" height="14" fill="#2e9e5b"><title>THRUNNING 40.000 ms</title></rect>
+<rect x="865.7" y="33" width="14.3" height="14" fill="#7d6bc4"><title>THRECEIVE 2.000 ms</title></rect>
+<text x="212" y="70" font-size="11" fill="#222">pid:100 tid:2</text>
+<rect x="220.0" y="59" width="14.3" height="14" fill="#95a5a6"><title>THCREATE 2.000 ms</title></rect>
+<rect x="234.3" y="59" width="287.0" height="14" fill="#2e9e5b"><title>THRUNNING 40.000 ms</title></rect>
+<rect x="521.3" y="59" width="358.7" height="14" fill="#7d6bc4"><title>THRECEIVE 50.000 ms</title></rect>
+<text x="212" y="96" font-size="11" fill="#222">pid:100 tid:3</text>
+<rect x="220.0" y="85" width="14.3" height="14" fill="#95a5a6"><title>THCREATE 2.000 ms</title></rect>
+<rect x="234.3" y="85" width="301.3" height="14" fill="#c0392b"><title>THMUTEX 42.000 ms</title></rect>
+<rect x="535.7" y="85" width="14.3" height="14" fill="#2e9e5b"><title>THRUNNING 2.000 ms</title></rect>
+<rect x="550.0" y="85" width="43.0" height="14" fill="#7d6bc4"><title>THRECEIVE 6.000 ms</title></rect>
+<rect x="593.0" y="85" width="272.6" height="14" fill="#c0392b"><title>THMUTEX 38.000 ms</title></rect>
+<rect x="865.7" y="85" width="14.3" height="14" fill="#2e9e5b"><title>THRUNNING 2.000 ms</title></rect>
+<text x="212" y="122" font-size="11" fill="#222">pid:1 tid:1</text>
+<rect x="220.0" y="111" width="660.0" height="14" fill="#7d6bc4"><title>THRECEIVE 92.000 ms</title></rect>
+<rect x="220" y="154" width="12" height="12" fill="#2e9e5b"/>
+<text x="235" y="164" font-size="10" fill="#333">THRUNNING</text>
+<rect x="307" y="154" width="12" height="12" fill="#e8a13a"/>
+<text x="322" y="164" font-size="10" fill="#333">THREADY</text>
+<rect x="382" y="154" width="12" height="12" fill="#c0392b"/>
+<text x="397" y="164" font-size="10" fill="#333">THSEM</text>
+<rect x="445" y="154" width="12" height="12" fill="#c0392b"/>
+<text x="460" y="164" font-size="10" fill="#333">THMUTEX</text>
+<rect x="520" y="154" width="12" height="12" fill="#7d6bc4"/>
+<text x="535" y="164" font-size="10" fill="#333">THRECEIVE</text>
+<rect x="607" y="154" width="12" height="12" fill="#7d6bc4"/>
+<text x="622" y="164" font-size="10" fill="#333">THREPLY</text>
+<rect x="682" y="154" width="12" height="12" fill="#7d6bc4"/>
+<text x="697" y="164" font-size="10" fill="#333">THSEND</text>
+<rect x="751" y="154" width="12" height="12" fill="#8e44ad"/>
+<text x="766" y="164" font-size="10" fill="#333">THINTR</text>
+<rect x="820" y="154" width="12" height="12" fill="#95a5a6"/>
+<text x="835" y="164" font-size="10" fill="#333">THCREATE</text>
+<rect x="901" y="154" width="12" height="12" fill="#333333"/>
+<text x="916" y="164" font-size="10" fill="#333">THDEAD</text>
+</svg>
+<h2>Per-thread statistics (ms)</h2>
+<table><tr><th>thread</th><th>cpu</th><th>ready-wait</th><th>blocked</th>
+<th>worst ready</th><th>worst block</th></tr>
+<tr><td>pid:100 tid:1</td><td>44.000</td><td>40.000</td><td>8.000</td><td>40.000</td><td>6.000</td></tr>
+<tr><td>pid:100 tid:2</td><td>40.000</td><td>0.000</td><td>50.000</td><td>0.000</td><td>50.000</td></tr>
+<tr><td>pid:100 tid:3</td><td>4.000</td><td>0.000</td><td>86.000</td><td>0.000</td><td>42.000</td></tr>
+<tr><td>pid:1 tid:1</td><td>0.000</td><td>0.000</td><td>92.000</td><td>0.000</td><td>92.000</td></tr></table>
+<h2>Priority inversions</h2>
+<table><tr><th>blocked thread</th><th>state</th><th>blocked for</th>
+<th>ran meanwhile (middle prio)</th><th>starved holder (low prio)</th>
+<th>overlap</th></tr>
+<tr><td>pid:100 tid:3 (prio 30)</td><td>THMUTEX</td><td>42.000 ms</td><td>pid:100 tid:2 (prio 20)</td><td>pid:100 tid:1 (prio 10)</td><td>40.000 ms</td></tr></table>
+<p><small>Generated by qnx-trace-lens 0.1.1. Times are wall time from the
+trace; on QEMU (TCG) use them for practice, not as measurements.</small></p>
+</body></html>

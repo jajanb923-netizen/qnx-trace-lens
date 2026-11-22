@@ -1,0 +1,22 @@
+  TRACE_CYCLES_PER_SEC:: 2648529944
+ TRACE_TRACELOGGER_ARGS:: tracelogger -w -s 3 -f /tmp/rt-pulse.kev
+  TRACE_DATE:: 2026-11-22
+
+t:0x0 CPU:00 THREAD          :THCREATE         pid:100 tid:1 priority:10 policy:1
+t:0x0 CPU:00 THREAD          :THCREATE         pid:100 tid:2 priority:20 policy:1
+t:0x0 CPU:00 THREAD          :THCREATE         pid:100 tid:3 priority:30 policy:1
+t:0x0 CPU:00 THREAD          :THRUNNING        pid:100 tid:1 priority:10 policy:1
+t:0x50d3a3 CPU:00 THREAD          :THMUTEX          pid:100 tid:3 priority:30 policy:1
+t:0x50d3a3 CPU:00 THREAD          :THREADY          pid:100 tid:1 priority:10 policy:1
+t:0x50d3a3 CPU:01 THREAD          :THRUNNING        pid:100 tid:2 priority:20 policy:1
+t:0x6a15c71 CPU:01 THREAD          :THRECEIVE        pid:100 tid:2 priority:20 policy:1
+t:0x6a15c71 CPU:00 THREAD          :THRUNNING        pid:100 tid:1 priority:10 policy:1
+t:0x6f23015 CPU:00 THREAD          :THRECEIVE        pid:100 tid:1 priority:10 policy:1
+t:0x6f23015 CPU:00 THREAD          :THRUNNING        pid:100 tid:3 priority:30 policy:1
+t:0x74303b9 CPU:00 THREAD          :THRECEIVE        pid:100 tid:3 priority:30 policy:1
+t:0x7e4ab01 CPU:00 THREAD          :THRUNNING        pid:100 tid:1 priority:10 policy:1
+t:0x8357ea5 CPU:00 THREAD          :THMUTEX          pid:100 tid:3 priority:30 policy:1
+t:0xe3533ce CPU:00 THREAD          :THRECEIVE        pid:100 tid:1 priority:10 policy:1
+t:0xe3533ce CPU:00 THREAD          :THRUNNING        pid:100 tid:3 priority:30 policy:1
+t:0xe860772 CPU:00 THREAD          :THRECEIVE        pid:100 tid:3 priority:30 policy:1
+t:0x0 CPU:01 THREAD          :THRECEIVE        pid:1 tid:1 priority:255 policy:1
